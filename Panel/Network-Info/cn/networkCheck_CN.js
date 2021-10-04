@@ -58,7 +58,7 @@
      if (error) {
        $done({
          title: '发生错误',
-         content: '无法获得目前网络资讯\n请检查网络状态后重试',
+         content: '无法获得目前网络信息\n请检查网络状态后重试',
          icon: 'wifi.exclamationmark',
          'icon-color': '#CB1B45',
        });
@@ -74,7 +74,7 @@
          (v6.primaryRouter && wifi.ssid ? `Router IPv6 : ${v6.primaryRouter}\n` : '') +
          `节点 IP : ${info.query}\n` +
          `节点 ISP : ${info.isp}\n` +
-         `节点 位置 : ${getFlagEmoji(info.countryCode)} | ${info.country} - ${info.city
+         `节点 位置 : ${getFlagEmoji(info.countryCode)} ${info.country} - ${info.city
          }`,
        icon: wifi.ssid ? 'wifi' : 'simcard',
        'icon-color': wifi.ssid ? '#005CAF' : '#F9BF45',
